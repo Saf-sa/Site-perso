@@ -1,0 +1,52 @@
+main{
+    background-image: url(./photo/gaya/DSCN0987.JPG);
+    height: 100vh;
+    background-size: cover;
+    pointer-events: none;
+
+    
+}
+
+body{
+   width: 100%;
+   height: auto;
+   letter-spacing: 0.125rem;  
+}
+body .wave{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+header{
+    color: white;
+}
+
+footer{
+    color: white);
+}
+
+@media (max-width: 750px) {
+    h1{
+        padding-left: 10px;
+        padding-top: 15px;
+        font-size: 2.4rem;
+    
+    
+    }
+    h1 a:hover{
+      color: rgb(47, 155, 171);
+      font-size: 2.5rem;
+    }
+        h2{
+          font-size: 25px;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          
+            }
+        
+ 
+   
+  }
+  
+  

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Crimson Pro", serif;
+  
+}
+
+header {
+  background-color: none;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+}
+h1 {
+  
+  background-color: none;
+  font-size: 3.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+h1 a:hover {
+  font-size: 3.57rem;
+  color: rgb(106, 149, 156);
+  text-decoration: none;
+  text-shadow: -2px -1px 3px rgba(56, 104, 117, 0.47);
+}
+.nav-menu {
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+}
+.menu .nav-menu:hover {
+  visibility: visible;
+  font-size: 1.40rem;
+  color: rgb(116, 149, 156);
+  text-decoration: none;
+  text-shadow: -2px -1px 3px rgba(91, 113, 119, 0.47);
+}
+
+
+.hamburger, .close {
+  visibility: visible;
+  border: none;
+  cursor: pointer;
+  /* position absolute position the icons relative to the body because they have no position relative parents*/
+  position: absolute;
+  top:20px;
+  left: 10px;
+  width: 40px;
+  height: 50px;
+}
+
+.hamburger {
+  visibility: visible;
+}
+
+
+.hamburger img, .close img {
+  visibility: hidden;
+  border: none;
+  cursor: pointer;
+  /* position absolute position the icons relative to the body because they have no position relative parents*/
+  position: absolute;
+  top:10px;
+  left: 0px;
+  width: 40px;
+  height: 50px;
+}
+
+.navbar {
+  background-color: transparent;
+ visibility: visible;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0px;
+  width: 155px;
+  height: 40vh;
+  padding-top: 80px;
+  overflow: hidden;
+  /* basic navbar styling*/
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding-left: 0px;
+  /* animate slide up/down */
+  transform: translateY(-100%);
+  transition: transform 0.2s ease; 
+ 
+}
+
+/* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
+
+.navbar:target {
+  /* show navbar */
+  
+  visibility: visible;
+  transform: translateY(0);
+  transform:scale(0.5)" src="rect.png" width="200" height="132">
+  
+}
+a{
+}
+li a {
+  
+  visibility: hidden;
+  display: flex;
+  font-size: 0.75rem;
+  
+  background-color: transparent;
+  font-weight: bold;
+  /* remove default underline and add our own with padding and border bottom */
+  text-decoration: none;
+  padding-bottom: 0.6rem;
+  padding-left: 10px;
+}
+
+li a:hover, li a:focus {
+  /* show border bottom  and font on hover*/
+  background-color: transparent;
+  color: rgb(116, 224, 241);
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-shadow: -2px -1px 3px rgba(56, 104, 117, 0.47);
+}
+.hamburger:hover .img {
+
+  /* show border bottom */
+  visibility: hidden;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-shadow: -2px -1px 3px rgba(56, 104, 117, 0.47);
+}
+
+footer {
+  position: fixed;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  
+  padding-top: 10px;
+  gap: 1rem;
+}
+.icons {
+  padding-left: 17px;
+  width: 30px;
+  height: 30px;
+}
+.icons:hover {
+  width: 43px;
+  height: 33px;
+}
+
+@media screen and (max-width: 300px){
+  h1{
+    font-size: 1.5rem;
+  }
+  .menu{
+    margin-bottom: 200px;
+  }
+  main .container{
+    margin-top: 200px;
+    margin-left: 100px;
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  h1{
+   
+    font-size: 2.5rem;
+  }
+  .hamburger img, .close img{
+    visibility: hidden;
+  }
+
+}
+@media (max-width: 950px) {
+  li a{
+    visibility: visible;
+  
+  }
+  .menu .nav-menu{
+    visibility: hidden;
+    font-size:0.7rem ;
+}
+
+.navbar {
+  visibility: hidden;
+}
+.hamburger img, .close img{
+  visibility: visible;
+}
+
+}
+
+
+

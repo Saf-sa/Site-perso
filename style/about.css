@@ -1,0 +1,92 @@
+
+body{
+    background-image: none;
+    font-family:  'Crimson Pro', serif;
+}
+
+header{
+  z-index: 1;
+  background-color: white;
+    color: black;
+  }
+  h1{
+    background-color: white;
+  }
+  header a{
+    display: inline-block;
+    background-color: white;
+      color: black;
+  }  
+  .navbar{
+    align-items: flex-start;
+  }
+h1 a:hover{
+  color: rgb(47, 155, 171);
+}
+li a:hover, li a:focus {
+  /* show border bottom  and font on hover*/
+  color: rgb(116, 224, 241);
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-shadow: -2px -1px 3px rgba(56, 104, 117, 0.47);
+}
+.container{
+margin: 0 auto;
+  width: 100%;
+  
+}
+.photo{
+  width: fit-content;
+  margin: auto;
+  padding-top: 60px;
+
+}
+.photo img{
+
+  border-radius: 50%;
+  box-shadow: 0 0 10px #646060;
+  width: 300px;
+  
+}
+h2{
+  text-align: center;
+  margin-top: 150px;
+  width: 100%;
+  font-size: 3rem;
+  
+  color: black;
+}
+footer{
+  background-color: white !important;
+    color: black;
+  }
+  
+  footer{
+      color: black;
+  }
+@media (max-width: 750px) {
+  h1{
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 2.4rem;
+  
+  
+  }
+  h1 a:hover{
+    color: rgb(47, 155, 171);
+    font-size: 2.5rem;
+  }
+      h2{
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        
+          }
+      
+  .photo img{
+    width: 200px;
+  
+
+  }
+}
+

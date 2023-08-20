@@ -1,0 +1,117 @@
+body {
+  background-image: none;
+  font-family: "Crimson Pro", serif;
+}
+
+header {
+  z-index: 1;
+  background-color: white;
+  color: black;
+}
+
+header a {
+  z-index: 2;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  background-color: white;
+}
+
+header a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+}
+
+h1:hover {
+  color: rgb(47, 155, 171);
+}
+
+.navbar {
+  align-items: flex-start;
+}
+
+footer {
+  z-index: 1;
+  background-color: white;
+  color: black;
+  color: black;
+}
+
+#gallery {
+  margin-left: 9rem;
+  margin-top: 130px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  #gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1{
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 2.4rem;
+  
+  
+  }
+  h1 a:hover{
+    color: rgb(47, 155, 171);
+    font-size: 2.5rem;
+  }
+  #gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+#gallery img,
+#gallery video {
+  width: 80%;
+  height: auto;
+  margin: 1% auto;
+  box-shadow: -3px 5px 15px #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.modal-img,
+.model-vid {
+  width: 0%;
+  height: auto;
+}
+
+.modal-body {
+  padding: 0px;
+}
