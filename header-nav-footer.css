@@ -94,7 +94,7 @@ h1 a:hover {
   justify-content: space-evenly;
   padding-left: 0px;
   /* animate slide up/down */
-  transform: translateY(-100%);
+  transform: translatex(-100%);
   transition: transform 0.2s ease; 
  
 }
